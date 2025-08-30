@@ -12,13 +12,18 @@ Since this is a Jekyll-based GitHub Pages site, typical development commands wou
 - `bundle exec jekyll build` - Build the site for production
 
 ## Architecture
-This repository is currently in its initial state with minimal content. When content is added, it will likely follow standard Jekyll conventions:
+This repository follows standard Jekyll conventions:
 - `_config.yml` - Jekyll configuration
 - `_posts/` - Blog posts in Markdown format
 - `_layouts/` - HTML templates
 - `_includes/` - Reusable template components
 - `assets/` - CSS, JavaScript, and images
-- `index.html` or `index.md` - Homepage
+- `index.md` - Homepage
+
+## Content Guidelines
+- **Prefer Markdown over HTML**: When creating new content for the site, use Markdown format (`.md` files) rather than HTML when possible
+- Jekyll will automatically convert Markdown to HTML during the build process
+- Use HTML only when Markdown limitations require it (complex layouts, specific styling needs, etc.)
 
 ## Notes
 - The `.gitignore` is configured for Jekyll with entries for `_site/`, `.sass-cache/`, `.jekyll-cache/`, and `.bundle/`
