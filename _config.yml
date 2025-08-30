@@ -1,0 +1,32 @@
+# Jekyll configuration for GitHub Pages
+title: "continuum nought"
+description: "A GitHub Pages site"
+baseurl: ""
+url: "https://continuumnought.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Kramdown settings for LaTeX support
+kramdown:
+  math_engine: mathjax
+  math_engine_opts:
+    preview: true
+    preview_as_code: false
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
